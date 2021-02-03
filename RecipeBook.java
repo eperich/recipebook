@@ -67,23 +67,6 @@ public class RecipeBook {
         
     }
 	 
-	/**
-	 * Add the following custom methods:
-	 * 
-	 * //printAllRecipeDetails(SteppingStone5_Recipe selectedRecipe)
-	 * 		This method should accept a recipe from the listOfRecipes ArrayList
-	 * 		recipeName and use the SteppingStone5_Recipe.printRecipe() method 
-	 * 		to print the recipe
-	 * 		
-	 * //printAllRecipeNames() <-- This method should print just the recipe
-	 * 		names of each of the recipes in the listOfRecipes ArrayList
-	 * 
-	 * //addRecipe(SteppingStone5_Recipe tmpRecipe) <-- This method should use
-	 * 		the SteppingStone5_Recipe.addRecipe() method to add a new 
-	 * 		SteppingStone5_Recipe to the listOfRecipes
-	 * 
-	 */
-	
 	
 	/**
 	* A variation of following menu method should be used as the actual main 

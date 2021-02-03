@@ -13,25 +13,25 @@ public class Ingredient {
     
     // calculate number of cups given amount of ingredient and unit of measurement
     private float calculateNumberCups(float ingredientAmount, String unitOfMeasurement) {
-        float numberCups = 0;
+        float tempNumberCups = 0;
         switch(unitOfMeasurement){
            case "c":
-               numberCups = ingredientAmount;
+               tempNumberCups = ingredientAmount;
                break;
            case "Tbsp":
-               numberCups = ingredientAmount / 16;
+               tempNumberCups = ingredientAmount / 16;
                break;
            case "tsp":
-               numberCups = ingredientAmount / 48;
+               tempNumberCups = ingredientAmount / 48;
                break;
            case "oz":
-               numberCups = ingredientAmount / 8;
+               tempNumberCups = ingredientAmount / 8;
                break;
            case "mL":
-               numberCups = ingredientAmount / 237;
+               tempNumberCups = ingredientAmount / 237;
                break;
         }
-        return numberCups;
+        return tempNumberCups;
     }
     
     // return name of ingredient

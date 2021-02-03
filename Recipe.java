@@ -107,7 +107,6 @@ public class Recipe {
         for (i = 0; i < recipeSteps.size(); ++i) {
             System.out.println(i + 1 + ". " + recipeSteps.get(i));
         }
-        System.out.println();
     }
     
     // create a new recipe

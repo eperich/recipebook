@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 public class Recipe {
     
-    private String recipeName;
-    private int servings;
-    ArrayList<Ingredient> recipeIngredients = new ArrayList<>();
-    private double totalRecipeCalories;
-    ArrayList<String> recipeSteps = new ArrayList<>();
+    private String recipeName;  // recipe name
+    private int servings;       // number of servings
+    ArrayList<Ingredient> recipeIngredients = new ArrayList<>();    // ingredients
+    private double totalRecipeCalories;     // total calories
+    ArrayList<String> recipeSteps = new ArrayList<>();      // steps
      
     /**
      * initialize new recipe

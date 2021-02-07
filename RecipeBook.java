@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class RecipeBook {
 	
 
-    private ArrayList<Recipe> listOfRecipes;
+    private ArrayList<Recipe> listOfRecipes; // list of recipes
     
     /**
      * @return List of recipes 

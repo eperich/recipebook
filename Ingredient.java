@@ -7,12 +7,12 @@ package FinalProject;
 import java.util.Scanner;
 
 public class Ingredient {
-    private String nameOfIngredient;
-    private String unitOfMeasurement;
-    private float ingredientAmount;
-    private float numberCups;
-    private int numberCaloriesPerCup;
-    private final double totalCalories;
+    private String nameOfIngredient; // ingredient name
+    private String unitOfMeasurement; // unit of measurement (c, Tbsp, tsp, oz, mL)
+    private float ingredientAmount; // ingredient amount in given unit
+    private float numberCups; // number of cups calculated from amount, unit
+    private int numberCaloriesPerCup; // number of calories per cup
+    private final double totalCalories; // total calories
     
     /**
      * 

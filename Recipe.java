@@ -29,11 +29,11 @@ public class Recipe {
     
     /**
      * recipe constructor
-     * @param recipeName
-     * @param servings
-     * @param recipeIngredients
-     * @param totalRecipeCalories
-     * @param recipeSteps 
+     * @param recipeName name of recipe
+     * @param servings number of servings
+     * @param recipeIngredients list of ingredients
+     * @param totalRecipeCalories total calories
+     * @param recipeSteps recipe steps
      */
     public Recipe(String recipeName, int servings, 
     	ArrayList<Ingredient> recipeIngredients, double totalRecipeCalories, 
@@ -48,7 +48,7 @@ public class Recipe {
     
     /**
      * set recipe name
-     * @param recipeName 
+     * @param recipeName name of recipe
      */
     public void setRecipeName(String recipeName) {
         this.recipeName = recipeName;
@@ -64,7 +64,7 @@ public class Recipe {
     
     /**
      * Set number of servings
-     * @param servings 
+     * @param servings number of servings
      */
     public void setServings(int servings) {
         this.servings = servings;
@@ -80,7 +80,7 @@ public class Recipe {
     
     /**
      * Set recipe ingredients
-     * @param recipeIngredients 
+     * @param recipeIngredients list of ingredients
      */
     public void setRecipeIngredients(ArrayList<Ingredient> recipeIngredients) {
         this.recipeIngredients = recipeIngredients;
@@ -96,7 +96,7 @@ public class Recipe {
     
     /**
      * Set total recipe calories
-     * @param totalRecipeCalories 
+     * @param totalRecipeCalories total calories
      */
     public void setTotalRecipeCalories(double totalRecipeCalories) {
         this.totalRecipeCalories = totalRecipeCalories;

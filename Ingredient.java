@@ -16,8 +16,8 @@ public class Ingredient {
     
     /**
      * 
-     * @param ingredientAmount
-     * @param unitOfMeasurement
+     * @param ingredientAmount ingredient amount
+     * @param unitOfMeasurement unit of measurement
      * @return number of cups
      */
     private float calculateNumberCups(float ingredientAmount, String unitOfMeasurement) {
@@ -52,7 +52,7 @@ public class Ingredient {
     
     /**
      * set name of ingredient
-     * @param nameOfIngredient 
+     * @param nameOfIngredient name of ingredient
      */
     public void setNameOfIngredient (String nameOfIngredient) {
         this.nameOfIngredient = nameOfIngredient;
@@ -68,7 +68,7 @@ public class Ingredient {
     
     /**
      * set number of cups
-     * @param numberCups 
+     * @param numberCups number of cups
      */
     public void setNumberCups(float numberCups) {
         this.numberCups = numberCups;
@@ -84,7 +84,7 @@ public class Ingredient {
     
     /**
      * set ingredient amount
-     * @param ingredientAmount 
+     * @param ingredientAmount ingredient amount
      */
     public void setIngredientAmount(float ingredientAmount) {
         this.ingredientAmount = ingredientAmount;
@@ -100,7 +100,7 @@ public class Ingredient {
     
     /**
      * set unit of measurement
-     * @param unitOfMeasurement 
+     * @param unitOfMeasurement unit of measurement
      */
     public void setUnitOfMeasurement(String unitOfMeasurement) {
         this.unitOfMeasurement = unitOfMeasurement;
@@ -116,7 +116,7 @@ public class Ingredient {
     
     /**
      * set number of calories per cup
-     * @param numberCaloriesPerCup 
+     * @param numberCaloriesPerCup number of calories per cup
      */
     public void setNumberCaloriesPerCup(int numberCaloriesPerCup) {
         this.numberCaloriesPerCup = numberCaloriesPerCup;
@@ -145,11 +145,11 @@ public class Ingredient {
     
     /**
      * ingredient object constructor
-     * @param nameOfIngredient
-     * @param unitOfMeasurement
-     * @param ingredientAmount
-     * @param numberCaloriesPerCup
-     * @param totalCalories 
+     * @param nameOfIngredient ingredient name
+     * @param unitOfMeasurement unit of measurement
+     * @param ingredientAmount ingredient amount
+     * @param numberCaloriesPerCup number of calories per cup
+     * @param totalCalories total calories
      */
     public Ingredient(String nameOfIngredient, String unitOfMeasurement, 
             float ingredientAmount, int numberCaloriesPerCup, float totalCalories) {
@@ -165,7 +165,7 @@ public class Ingredient {
     
     /**
      * create new ingredient
-     * @param tempNameOfIngredient
+     * @param tempNameOfIngredient ingredient name
      * @return new ingredient
      */
     public Ingredient addIngredient(String tempNameOfIngredient) {

@@ -21,7 +21,7 @@ public class RecipeBook {
     
     /**
      * set list of recipes
-     * @param recipeList 
+     * @param recipeList list of recipes 
      */
     public void setListOfRecipes(ArrayList recipeList) {
         this.listOfRecipes = recipeList;
@@ -35,14 +35,14 @@ public class RecipeBook {
     }
     
     /**
-     * @param recipeList 
+     * @param recipeList list of recipes
      */
     public RecipeBook(ArrayList recipeList) {
         this.listOfRecipes = recipeList;
     }
     
     /**
-     * @param recipeName
+     * @param recipeName name of recipe
      */
     public void printAllRecipeDetails(String recipeName) {
         int i = 0;
@@ -56,7 +56,7 @@ public class RecipeBook {
     
     /**
      * print recipe details
-     * @param recipeName 
+     * @param recipeName name of recipe
      */
     public void printAllRecipeSteps(String recipeName) {
         int i = 0;
@@ -94,36 +94,24 @@ public class RecipeBook {
     }
 	 
 	
-	/**
-	* A variation of following menu method should be used as the actual main 
-	*		once you are ready to submit your final application.  For this 
-	*		submission and for using it to do stand-alone tests, replace the 
-	*		public void menu() with the standard 
-	*			public static main(String[] args)
-	*		method
-	*
-	*/
-	/**
-         * 
-         * @param args 
-         */
-	public void menu() {
-    	// Create a Recipe Box
+	
+    public void menu() {
+        // Create a Recipe Box
     		
-	RecipeBook myRecipeBox = new RecipeBook(); 
+        RecipeBook myRecipeBox = new RecipeBook(); 
         Scanner menuScnr = new Scanner(System.in);
         
 		
-		/**
-		* Print a menu for the user to select one of the three options:
-		*
-		*/
+        /**
+        * Print a menu for the user to select one of the three options:
+        *
+        */
 		
-		System.out.println("Menu\n" + "1. Add Recipe\n" + 
-                        "2. Print All Recipe Details\n" + 
-                        "3. Print All Recipe Steps\n" +
-                        "4. Print All Recipe Names\n" + 
-                        "\nPlease select a menu item:");
+        System.out.println("Menu\n" + "1. Add Recipe\n" + 
+            "2. Print All Recipe Details\n" + 
+            "3. Print All Recipe Steps\n" +
+            "4. Print All Recipe Names\n" + 
+            "\nPlease select a menu item:");
         while (menuScnr.hasNextInt() || menuScnr.hasNextLine()) {
             int input = menuScnr.nextInt();
             switch(input) {
@@ -152,10 +140,9 @@ public class RecipeBook {
                         "3. Print All Recipe Steps\n" +
                         "4. Print All Recipe Names\n" +
                         "\nPlease select a menu item:");
-            }
+        }
 		
-        
-	}
+    }
         
 
 }

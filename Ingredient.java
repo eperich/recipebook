@@ -1,4 +1,7 @@
-
+/**
+ * @author Erica Perich
+ * 
+ */
 package FinalProject;
 
 import java.util.Scanner;

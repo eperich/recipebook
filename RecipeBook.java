@@ -1,3 +1,7 @@
+/**
+ * @author Erica Perich
+ * 
+ */
 package FinalProject;
 
 import java.util.ArrayList;
@@ -8,23 +12,38 @@ public class RecipeBook {
 
     private ArrayList<Recipe> listOfRecipes;
     
+    /**
+     * @return List of recipes 
+     */
     public ArrayList getListOfRecipes() {
         return this.listOfRecipes;
     }
     
+    /**
+     * set list of recipes
+     * @param recipeList 
+     */
     public void setListOfRecipes(ArrayList recipeList) {
         this.listOfRecipes = recipeList;
     }
     
+    /**
+     * initialize recipe book
+     */
     public RecipeBook() {
         this.listOfRecipes = new ArrayList();
     }
     
+    /**
+     * @param recipeList 
+     */
     public RecipeBook(ArrayList recipeList) {
         this.listOfRecipes = recipeList;
     }
     
-    // print recipe details
+    /**
+     * @param recipeName
+     */
     public void printAllRecipeDetails(String recipeName) {
         int i = 0;
         for (i = 0; i < listOfRecipes.size(); ++i) {
@@ -35,7 +54,10 @@ public class RecipeBook {
         }
     }
     
-    // print recipe details
+    /**
+     * print recipe details
+     * @param recipeName 
+     */
     public void printAllRecipeSteps(String recipeName) {
         int i = 0;
         ArrayList<String> tempRecipeSteps = new ArrayList<>();
@@ -52,6 +74,9 @@ public class RecipeBook {
     }
     
     // print recipe list
+    /**
+     * print all recipe names
+     */
     public void printAllRecipeNames() {
         int i = 0;
         for (i = 0; i < listOfRecipes.size(); ++i) {
@@ -60,7 +85,9 @@ public class RecipeBook {
                     }
     }
     
-    // add recipe 
+    /**
+     * add new recipe
+     */
     public void newRecipe() {
         Recipe tmpRecipe = new Recipe().createNewRecipe();
         listOfRecipes.add(tmpRecipe);
@@ -77,7 +104,10 @@ public class RecipeBook {
 	*		method
 	*
 	*/
-	
+	/**
+         * 
+         * @param args 
+         */
 	public static void main(String[] args) {
     	// Create a Recipe Box
     		
@@ -131,13 +161,3 @@ public class RecipeBook {
 
 }
 
-
-/**
- * 
- * Final Project Details:
- * 
- * For your final project submission, you should add a menu item and a method 
- *		to access the custom method you developed for the Recipe class 
- * 		based on the Stepping Stone 5 Lab.
- *
- */

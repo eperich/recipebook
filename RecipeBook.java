@@ -107,7 +107,7 @@ public class RecipeBook {
          * 
          * @param args 
          */
-	public static void main(String[] args) {
+	public void menu() {
     	// Create a Recipe Box
     		
 	RecipeBook myRecipeBox = new RecipeBook(); 

@@ -14,7 +14,12 @@ public class Ingredient {
     private int numberCaloriesPerCup;
     private final double totalCalories;
     
-    // calculate number of cups given amount of ingredient and unit of measurement
+    /**
+     * 
+     * @param ingredientAmount
+     * @param unitOfMeasurement
+     * @return number of cups
+     */
     private float calculateNumberCups(float ingredientAmount, String unitOfMeasurement) {
         float tempNumberCups = 0;
         switch(unitOfMeasurement){
@@ -37,61 +42,97 @@ public class Ingredient {
         return tempNumberCups;
     }
     
-    // return name of ingredient
+    /**
+     * 
+     * @return name of ingredient
+     */
     public String getNameOfIngredient() {
     return nameOfIngredient;
     }
     
-    // set name of ingredient 
+    /**
+     * set name of ingredient
+     * @param nameOfIngredient 
+     */
     public void setNameOfIngredient (String nameOfIngredient) {
         this.nameOfIngredient = nameOfIngredient;
     }
     
-    // return number of cups
+    /**
+     * 
+     * @return number of cups
+     */
     public float getNumberCups() {
         return numberCups;
     }
     
-    // set number of cups
+    /**
+     * set number of cups
+     * @param numberCups 
+     */
     public void setNumberCups(float numberCups) {
         this.numberCups = numberCups;
     }
     
-    // return ingredient amount
+    /**
+     * 
+     * @return ingredient amount
+     */
     public float getIngredientAmount() {
         return ingredientAmount;
     }
     
-    // set ingredient amount
+    /**
+     * set ingredient amount
+     * @param ingredientAmount 
+     */
     public void setIngredientAmount(float ingredientAmount) {
         this.ingredientAmount = ingredientAmount;
     }
     
-    // return unit of measurement
+    /**
+     * 
+     * @return unit of measurement
+     */
     public String getUnitofMeasurement() {
         return unitOfMeasurement;
     }
     
-    // set unit of measurement
+    /**
+     * set unit of measurement
+     * @param unitOfMeasurement 
+     */
     public void setUnitOfMeasurement(String unitOfMeasurement) {
         this.unitOfMeasurement = unitOfMeasurement;
     }
     
-    // return number of calories per cup
+    /**
+     * 
+     * @return number of calories per cup
+     */
     public int getNumberCaloriesPerCup() {
         return numberCaloriesPerCup;
     }
     
-    // set number of calories per cup
+    /**
+     * set number of calories per cup
+     * @param numberCaloriesPerCup 
+     */
     public void setNumberCaloriesPerCup(int numberCaloriesPerCup) {
         this.numberCaloriesPerCup = numberCaloriesPerCup;
     }
     
-    // get total calories
+    /**
+     * 
+     * @return total calories
+     */
     public double getTotalCalories() {
         return totalCalories;
     }
     
+    /**
+     * initialize ingredient object
+     */
     public Ingredient() {
         this.nameOfIngredient = "";
         this.unitOfMeasurement = "";
@@ -102,6 +143,14 @@ public class Ingredient {
         
     }
     
+    /**
+     * ingredient object constructor
+     * @param nameOfIngredient
+     * @param unitOfMeasurement
+     * @param ingredientAmount
+     * @param numberCaloriesPerCup
+     * @param totalCalories 
+     */
     public Ingredient(String nameOfIngredient, String unitOfMeasurement, 
             float ingredientAmount, int numberCaloriesPerCup, float totalCalories) {
         this.nameOfIngredient = nameOfIngredient;
@@ -114,6 +163,11 @@ public class Ingredient {
     }
     
     
+    /**
+     * create new ingredient
+     * @param tempNameOfIngredient
+     * @return new ingredient
+     */
     public Ingredient addIngredient(String tempNameOfIngredient) {
        String tempUnitOfMeasurement;
        float tempIngredientAmount;
@@ -185,6 +239,9 @@ public class Ingredient {
         return tempNewIngredient;
     }
     
+    /**
+     * print ingredient
+     */
     public void printIngredient() {
         System.out.print(ingredientAmount + unitOfMeasurement);
         System.out.println(" " + nameOfIngredient);

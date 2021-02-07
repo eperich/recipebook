@@ -15,7 +15,9 @@ public class Recipe {
     private double totalRecipeCalories;
     ArrayList<String> recipeSteps = new ArrayList<>();
      
-    // recipe initialization
+    /**
+     * initialize new recipe
+     */
     public Recipe() {
         this.recipeName = "";
         this.servings = 0; 
@@ -25,7 +27,14 @@ public class Recipe {
         
     }
     
-    // recipe assignments
+    /**
+     * recipe constructor
+     * @param recipeName
+     * @param servings
+     * @param recipeIngredients
+     * @param totalRecipeCalories
+     * @param recipeSteps 
+     */
     public Recipe(String recipeName, int servings, 
     	ArrayList<Ingredient> recipeIngredients, double totalRecipeCalories, 
         ArrayList<String> recipeSteps) 
@@ -37,57 +46,89 @@ public class Recipe {
         this.recipeSteps = recipeSteps;
     }
     
-    // set recipe name
+    /**
+     * set recipe name
+     * @param recipeName 
+     */
     public void setRecipeName(String recipeName) {
         this.recipeName = recipeName;
     }
     
-    // get recipe name
+    /**
+     * get recipe name
+     * @return recipe name
+     */
     public String getRecipeName() {
         return recipeName;
     }
     
-    // set number of servings
+    /**
+     * Set number of servings
+     * @param servings 
+     */
     public void setServings(int servings) {
         this.servings = servings;
     }
     
-    // get number of servings
+    /**
+     * Get number of servings
+     * @return servings
+     */
     public int getServings() {
         return servings;
     }
     
-    // set recipe ingredients
+    /**
+     * Set recipe ingredients
+     * @param recipeIngredients 
+     */
     public void setRecipeIngredients(ArrayList<Ingredient> recipeIngredients) {
         this.recipeIngredients = recipeIngredients;
     }
     
-    // get recipe ingredients
+    /**
+     * Get recipe ingredients
+     * @return recipe ingredients
+     */
     public ArrayList getRecipeIngredients() {
         return recipeIngredients;
     }
     
-    // set total recipe calories
+    /**
+     * Set total recipe calories
+     * @param totalRecipeCalories 
+     */
     public void setTotalRecipeCalories(double totalRecipeCalories) {
         this.totalRecipeCalories = totalRecipeCalories;
     }
     
-    // get total recipe calories
+    /**
+     * get total recipe calories
+     * @return total recipe calories
+     */
     public double getTotalRecipeCalories() {
         return totalRecipeCalories;
     }
     
-    // set recipe steps
+    /**
+     * set recipe steps
+     * @param recipeSteps array list where each element is a step
+     */
     public void setRecipeSteps(ArrayList<String> recipeSteps) {
         this.recipeSteps = recipeSteps;
     }
     
-    // get recipe steps
+    /**
+     * get recipe steps
+     * @return array list where each element is a recipe step
+     */
     public ArrayList getRecipeSteps() {
         return recipeSteps;
     }
     
-    // print recipe
+    /**
+     * print recipe
+     */
     public void printRecipe() {
         int singleServingCalories = 0;
         double singleServingCaloriesDouble = 0.0;
@@ -113,7 +154,10 @@ public class Recipe {
         }
     }
     
-    // create a new recipe
+    /**
+     * create a new recipe
+     * @return new recipe
+     */
     public Recipe createNewRecipe() {
         double tempTotalRecipeCalories = 0;
         ArrayList<Ingredient> tempRecipeIngredients = new ArrayList<>();
@@ -169,45 +213,5 @@ public class Recipe {
         return recipe1;
     }
 }
-
-
-/**
- * Final Project
- * 
- * For your Final Project:
- * 
- * 1. Modify this code to develop a Recipe class:
- *	a. change the void main method createNewRecipe() that returns a Recipe 
- * 	 
- * 2. FOR FINAL SUBMISSION ONLY:Change the ArrayList type to an 
- *		Ingredient object.  When a user adds an ingredient to the recipe, 
- * 		instead of adding just the ingredient name, you will be adding the 
- *		actual ingredient including name, amount, measurement type, calories.
- *	For the Milestone Two submission, the recipeIngredients ArrayList can
- *	remain as a String type.
- *
- * 3. Adapt the printRecipe() method to print the amount and measurement
- * 	type as well as the ingredient name.
- *
- * 4. Create a custom method in the Recipe class. 
- *      Choose one of the following options:
- *
- * 	a. print out a recipe with amounts adjusted for a different 
- * 		number of servings
- * 
- * 	b. create an additional list or ArrayList that allow users to 
- * 		insert step-by-step recipe instructions
- *
- * 	c. conversion of ingredient amounts from 
- * 		English to metric (or vice versa)
- *
- * 	d. calculate select nutritional information 
- *
- * 	e. calculate recipe cost
- * 
- *      f. propose a suitable alternative to your instructor
- * 
- */ 
-
 
 
